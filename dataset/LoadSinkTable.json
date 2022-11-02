@@ -1,0 +1,54 @@
+{
+	"name": "LoadSinkTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Region",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Country",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ProductCategory",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CampaignName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Revenue",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "RevenueTarget",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "City",
+				"type": "nvarchar"
+			},
+			{
+				"name": "State",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "CampaignAnalytics"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
